@@ -1,0 +1,263 @@
+@tailwind utilities;
+
+*{
+  @apply box-border m-0;
+}
+
+html,body,#root{
+  @apply h-full w-full;
+}
+
+.waving-hand {
+  animation-name: wave-animation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+  font-size: 50px;
+}
+.scrol {
+  height: 100vh; 
+  overflow-y: hidden; 
+}
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+  15% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+  30% { transform: rotate(-8.0deg) }
+  40% { transform: rotate(14.0deg) }
+  50% { transform: rotate(-4.0deg) }
+  60% { transform: rotate(10.0deg) }
+  70% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+ 100% { transform: rotate( 0.0deg) }
+}
+.service-box {
+  border: 1px solid rgba(204, 204, 204, 0.5); /* Adjust the RGB values and alpha channel as needed */
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-box:hover {
+  transform: scale(1.05);
+  /* Add any additional styles for the hover effect */
+}
+/* Add this CSS to your existing styles */
+.service-box h3 {
+  display: flex;
+  align-items: center;
+}
+
+.service-box h3 span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%; 
+  background-color: #393e42; 
+  color: #fff; 
+  text-align: center;
+  font-size: 18px; 
+  margin-right: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.service-box:hover h3 span {
+  background-color: #2980b9; 
+}
+.justified-paragraph{
+  text-align: justify;
+}
+
+.img {
+height: 280px;
+}
+
+.img1{
+  width: 420px;
+  height: 280px;
+}
+
+.overlay {
+  opacity: 0.8;
+  
+}
+
+.skills .title::after{
+  content: "what we know";
+}
+.skills .skills-content .column{
+  width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+  font-size: 20px;
+  font-weight: 600;
+ 
+}
+.skills .skills-content .left p{
+  text-align: justify;
+}
+.skills .skills-content .left a{
+  display: inline-block;
+  background: #6e6e6e;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #6e6e6e;
+  transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+  color: #6e6e6e;
+  background: none;
+}
+.skills .skills-content .right .bars{
+  margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skills-content .right span{
+  font-weight: 500;
+  font-size: 18px;
+}
+.skills .skills-content .right .line{
+  height: 8px;
+  width: 350px;
+  background: lightgrey;
+  position: relative;
+}
+.skills .skills-content .right .line::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #6e6e6e;
+}
+.skills-content .right .html::before{
+  width: 90%;
+}
+.skills-content .right .css::before{
+  width: 90%;
+}
+.skills-content .right .js::before{
+  width: 80%;
+}
+.skills-content .right .php::before{
+  width: 70%;
+}
+.skills-content .right .mysql::before{
+  width: 80%;
+}
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+ 
+
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #66C2FF;
+}
+
+.btn {
+ 
+ 
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.btn-primary {
+  background: orange;
+  border: 2px solid orange;
+}
+
+.btn-primary:hover {
+  background: black;
+  border: 2px solid black;
+}
+
+.btn-default {
+  background: white;
+  border: 2px solid white;
+  color: black;
+}
+
+.footer{
+  padding: 20px;
+background-color: rgb(31, 31, 39);
+height: 50px;
+color: #fff;}
+
+.home{
+
+  background: url(https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?size=626&ext=jpg) no-repeat center;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+/* Add these styles to your existing stylesheet or create a new one */
+
+/* Style for Education Box */
+.education-box {
+  background-color: #f2f2f2; /* Light gray background color */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style for each Education Section */
+.education-section {
+  background-color: #fff; /* White background color for each section */
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+/* Style for Contact Box */
+.contact-box {
+  background-color: #e6f7ff; /* Light blue background color */
+  padding: 20px;
+}
+
+/* Style for Contact Me Section */
+.contact-section {
+  background-color: #fff; /* White background color for the Contact Me section */
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
